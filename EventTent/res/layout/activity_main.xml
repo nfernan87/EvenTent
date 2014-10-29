@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/startup_screen_background"
+    tools:context="com.prototype.eventtent.MainActivity" >
+
+    <ImageView
+        android:id="@+id/EventTent_logo"
+        android:layout_width="90dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/startup_screen_logo" />
+
+    <EditText
+        android:id="@+id/username_text"
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/EventTent_logo"
+        android:layout_marginRight="69dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/username_logo"
+        android:background="@drawable/startup_screen_username_text"
+        android:ems="10"
+        android:hint="Username" />
+
+    <ImageView
+        android:id="@+id/username_logo"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_alignTop="@+id/username_text"
+        android:layout_alignBottom="@+id/username_text"
+        android:layout_marginLeft="69dp"
+        android:background="@drawable/startup_screen_username_icon" />
+
+    <ImageView
+        android:id="@+id/password_icon"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_toLeftOf="@+id/password_text"
+        android:layout_below="@+id/username_logo"
+        android:layout_alignTop="@+id/password_text"
+        android:layout_alignBottom="@+id/password_text"
+        android:layout_marginLeft="69dp"
+        android:background="@drawable/startup_screen_password_icon" />
+
+    <EditText
+        android:id="@+id/password_text"
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/username_text"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="69dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/username_logo"
+        android:background="@drawable/startup_screen_username_text"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <requestFocus />
+    
+
+    <ImageButton
+        android:id="@+id/forgot_password"
+        android:layout_width="90dp"
+        android:layout_height="12dp"
+        android:layout_alignLeft="@+id/password_icon"
+        android:layout_below="@+id/password_icon"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/startup_screen_forgotpwd" />
+
+    <ImageView
+        android:id="@+id/square_background"
+        android:layout_width="220dp"
+        android:layout_height="165dp"
+        android:layout_below="@+id/forgot_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="39dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/startup_screen_square_background" />
+
+    <ImageButton
+        android:id="@+id/login"
+        android:layout_width="197dp"
+        android:layout_height="37dp"
+        android:layout_alignLeft="@+id/password_icon"
+        android:layout_alignRight="@+id/password_text"
+        android:layout_below="@+id/forgot_password"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/startup_screen_login" />
+
+    <ImageButton
+        android:id="@+id/create_an_account"
+        android:layout_width="197dp"
+        android:layout_height="37dp"
+        android:layout_alignLeft="@+id/password_icon"
+        android:layout_alignRight="@+id/password_text"
+        android:layout_below="@+id/login"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/startup_screen_create_an_account" />
+
+    <ImageButton
+        android:id="@+id/login_with_facebook"
+        android:layout_width="197dp"
+        android:layout_height="37dp"
+        android:layout_alignLeft="@+id/password_icon"
+        android:layout_alignRight="@+id/password_text"
+        android:layout_below="@+id/create_an_account"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/startup_screen_login_with_facebook" />
+
+   
+
+</RelativeLayout>
